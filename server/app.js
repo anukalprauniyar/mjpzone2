@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 
 
 dotenv.config({path:'./config.env'})
+const PORT = process.env.PORT;
 
 // const DB = process.env.DATABASE;
 
@@ -14,7 +15,7 @@ app.get('/', (req,res)=>{
     res.send('HEllo');
 })
 
-app.listen(5000, ()=>{
-    console.log('Server is running on port number 5000');
+app.listen(PORT, ()=>{
+    console.log(`Server is running on port number ${PORT}`);
 })
 
