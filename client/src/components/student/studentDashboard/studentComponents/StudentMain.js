@@ -10,6 +10,9 @@ import SemesterResults from "./SemesterResults";
 import CourseDetails from "./CourseDetails";
 import StudentAttendance from "./StudentAttendance";
 
+
+
+
 function StudentMain() {
     return (
         <div className="main">
@@ -23,6 +26,7 @@ function StudentMain() {
             </nav>
             <BrowserRouter>
                 <Routes>
+                   
                     <Route path='/' element={<StudentDashboard />} />
                     <Route path='/schedule' element={<Schedule />} />
                     <Route path='/faculty-page' element={<FacultyPage />} />

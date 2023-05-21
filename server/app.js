@@ -9,7 +9,15 @@ const PORT = process.env.PORT;
 
 // const DB = process.env.DATABASE;
 
-require('./backend/db/conn')
+require('./backend/db/conn');
+
+
+app.use(express.json());
+
+// const Student  =  require('./models/studentSchema');
+
+//linked the router file 
+app.use(require('./router/authStudent'))
 
 app.get('/', (req,res)=>{
     res.send('HEllo');

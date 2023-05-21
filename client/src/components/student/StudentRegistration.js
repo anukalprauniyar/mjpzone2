@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import "./css/StudentRegistration.css";
 import Logo from './loginImage/mjpru-logo.png';
-import { Link } from 'react-router-dom';
+import { Link , useNavigate } from 'react-router-dom';
+
 
 function StudentRegistration() {
+
+    const navigate = useNavigate();
     const [userRegistration, setUserRegistration] = useState({
         studentfname: '',
         studentlname: '',
@@ -39,7 +42,7 @@ function StudentRegistration() {
     });
 
     // state to store all previous data and add new data
-    const [records, setRecords] = useState([]);
+    // const [records, setRecords] = useState([]);
 
     // To handle the input value to the input field
     const handleInput = (e) => {
@@ -48,15 +51,104 @@ function StudentRegistration() {
         setUserRegistration({ ...userRegistration, [name]: value })
     };
 
-    // Submit function to store users data
-    const handleSubmit = (e) => {
+    const PostData = async (e)=> {
         e.preventDefault();
-        const newRecord = { ...userRegistration, id: new Date().getTime().toString() };
-        // To store previous users data & set new data
-        setRecords([...records, newRecord]);
-        // To set empty input field after the submit
-        setUserRegistration({ studentfname: '', studentlname: '', fatherfname: '', fatherlname: '', motherfname: '', motherlname: '', dob: '', gender: '', phone: '', fatherphone: '', email: '', address1: '', address2: '', city: '', state: '', country: '', hsrollno: '', hsserialno: '', hsboard: '', hsobtainmarks: '', hsmaxmarks: '', imrollno: '', imserialno: '', imboard: '', imobtainmarks: '', immaxmarks: '', gdrollno: '', gdenrollno: '', gdboard: '', gdobtainmarks: '', gdmaxmarks: '' });
-    };
+        
+        const {
+             studentfname,
+            studentlname,
+            fatherlname,
+            fatherfname,
+            motherfname,
+            motherlname,
+            gender,
+            dob,
+            phone,
+            fatherphone,
+            email,
+            address1,
+            address2,
+            city,
+            state,
+            country,
+            hsrollno,
+            hsserialno,
+            hsboard,
+            hsobtainmarks,
+            hsmaxmarks,
+            imrollno,
+            imserialno,
+            imboard,
+            imobtainmarks,
+            immaxmarks,
+            gdrollno,
+            gdenrollno,
+            gdboard,
+            gdobtainmarks,
+            gdmaxmarks } = userRegistration ;
+
+            const res = await fetch("/register" , {
+              method : "POST",
+              headers : {
+                "Content-Type" : "application/json"
+              } ,
+              body :  JSON.stringify({
+                studentfname,
+            studentlname,
+            fatherlname,
+            fatherfname,
+            motherfname,
+            motherlname,
+            gender,
+            dob,
+            phone,
+            fatherphone,
+            email,
+            address1,
+            address2,
+            city,
+            state,
+            country,
+            hsrollno,
+            hsserialno,
+            hsboard,
+            hsobtainmarks,
+            hsmaxmarks,
+            imrollno,
+            imserialno,
+            imboard,
+            imobtainmarks,
+            immaxmarks,
+            gdrollno,
+            gdenrollno,
+            gdboard,
+            gdobtainmarks,
+            gdmaxmarks 
+              })
+            });
+
+            const data = await res.json();
+
+            if(data.status === 422 ||  !data){
+                window.alert("Invalid Registration");
+                console.log("Invalid Registration");
+            } else {
+                window.alert(" Registration Successfull");
+                console.log("Registration Successfull");
+
+                navigate("/")
+            }
+    }
+
+    // // Submit function to store users data
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     const newRecord = { ...userRegistration, id: new Date().getTime().toString() };
+    //     // To store previous users data & set new data
+    //     setRecords([...records, newRecord]);
+    //     // To set empty input field after the submit
+    //     setUserRegistration({ studentfname: '', studentlname: '', fatherfname: '', fatherlname: '', motherfname: '', motherlname: '', dob: '', gender: '', phone: '', fatherphone: '', email: '', address1: '', address2: '', city: '', state: '', country: '', hsrollno: '', hsserialno: '', hsboard: '', hsobtainmarks: '', hsmaxmarks: '', imrollno: '', imserialno: '', imboard: '', imobtainmarks: '', immaxmarks: '', gdrollno: '', gdenrollno: '', gdboard: '', gdobtainmarks: '', gdmaxmarks: '' });
+    // };
 
     return (
         <>
@@ -67,7 +159,7 @@ function StudentRegistration() {
                 <h1>MJP Rohilkhand University, Bareilly</h1>
             </div>
             <h1 className='registration-form-title'>Student Registration Form</h1>
-            <form onSubmit={handleSubmit} className='registration-form'>
+            <form  className='registration-form' method  = "POST">
                 <div className="form-heading"><b>Personal Details</b></div>
                 <div className="form-container1">
                     <div className='form-container1-box'>
@@ -339,7 +431,7 @@ function StudentRegistration() {
                 </div>
 
                 <div className='register-container'>
-                    <button type="submit" className="register">Register</button>
+                    <button type="submit" className="register" onClick={PostData}>Register</button>
                 </div>
             </form>
         </>
