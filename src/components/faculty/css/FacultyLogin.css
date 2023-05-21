@@ -1,0 +1,104 @@
+.login-frame {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../loginImage/MJPRU-Background.jpg') no-repeat center center/cover;
+}
+
+.login-container {
+    border-radius: 20px;
+    height: 78vh;
+    width: 65vw;
+    display: flex;
+    background: rgba(227, 246, 245, 0.4);
+    /* background: rgb(255, 121, 38, 0.4); */
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.login-left {
+    height: 100%;
+    width: 50%;
+    border-right: 2px solid rgb(0, 0, 0);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.title {
+    display: inline-block;
+    padding: 5px;
+    background: rgba(227, 246, 245, 0.8);
+    /* background: rgba(255, 121, 38, 0.8); */
+    color: rgba(13, 12, 37, 0.929);
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.title img{
+    height: 6.3vh;
+    width: 3.2vw;
+}
+
+.title h1{
+    font-size: 3em;
+}
+
+.login-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.login-right h1{
+    font-size: 40px;
+}
+
+.login-right span{
+    font-size: 25px;
+}
+
+.login-right a{
+    text-decoration: none;
+    font-size: 18px;
+    margin: 5px 0px 10px 0px;
+}
+
+.login-right input {
+    outline: none;
+    border: 1px solid #000000;
+    border-radius: 35px;
+    background: #ffffffc8;
+    width: 80%;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding: 17px;
+}
+
+.login-right button {
+    outline: none;
+    border: 1px solid rgba(13, 12, 37, 0.929);
+    background: #ffffffc8;
+    color: #000000c8;
+    border-radius: 35px;
+    width: 30%;
+    font-size: 16px;
+    margin-right: 47px;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+}
+
+.login-right button:hover {
+    border: 1px solid #ffffffc8;
+    color: #ffffffc8;
+    background: rgba(13, 12, 37, 0.929);
+}

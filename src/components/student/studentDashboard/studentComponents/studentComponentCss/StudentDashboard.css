@@ -1,0 +1,70 @@
+.welcome-dashboard {
+    margin: 20px;
+}
+
+.container1 {
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* height: 60vh; */
+}
+
+.dashboard-attendance {
+    border: 1px solid rgb(143, 143, 143);
+    margin: 20px;
+}
+
+.dashboard-attendance h2{
+    padding: 15px 20px 15px 20px;
+    background-color: rgb(222, 222, 222);
+    margin-bottom: 5px;
+}
+
+.attendance-subject {
+    border-bottom: 1px solid rgb(76, 76, 77);
+    display: flex;
+    font-size: 1.2rem;
+}
+
+.subject-code-head {
+    width: 6.953vw;
+    border-right: 1px solid;
+    padding: 15px 0px !important;
+}
+
+.subject-name-head {
+    width: 19.99vw;
+    border-right: 1px solid;
+}
+
+.attendance-subject p{
+    padding: 15px;
+}
+
+.subject-code {
+    width: 5vw;
+    border-right: 1px solid;
+}
+
+.subject-name {
+    width: 20vw;
+    border-right: 1px solid;
+}
+
+.events {
+    border: 1px solid rgb(143, 143, 143);
+    margin: 20px;
+}
+
+.events h2{
+    padding: 15px 20px 15px 20px;
+    background-color: rgb(222, 222, 222);
+    margin-bottom: 5px;
+}
+
+/* .container2 {
+    border: 2px solid red;
+    display: flex;
+    height: 60vh;
+} */

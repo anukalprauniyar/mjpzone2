@@ -1,0 +1,42 @@
+.container {
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-bottom: 1rem;
+    background-color:#ADD8E6;
+    
+  }
+  
+  th,
+  td {
+    padding: 0.5rem;
+    text-align: left;
+    border: 1px solid #111213;
+  }
+  
+  th {
+    font-weight: bold;
+    background-color: rgb(82, 155, 214);
+  }
+
+  .tdata {
+    background-color: rgb(82, 155, 214);
+  }
+  
+  .mycourse {
+    padding: 20px;
+    text-align: left;
+  }
+
+  .filter {
+    padding: 20px;
+    font-weight: 14px;
+  }
+
+  .select {
+    width: 100px;
+  }
+  
