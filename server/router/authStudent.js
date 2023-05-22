@@ -6,9 +6,11 @@ require('../backend/db/conn');
 const Student = require('../models/studentSchema');
 
 router.get('/',(req,res) => {
-    res.send('HEllo from router auth student')
+    res.send('Hello from router auth student')
 })
 
+
+//register 
 router.post('/register',async (req,res)=>{
     const {
     studentfname,

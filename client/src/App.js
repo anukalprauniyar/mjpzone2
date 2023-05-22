@@ -14,6 +14,7 @@ import EventRegistration from "./components/student/studentDashboard/studentComp
 import SemesterResults from "./components/student/studentDashboard/studentComponents/SemesterResults";
 import CourseDetails from "./components/student/studentDashboard/studentComponents/CourseDetails";
 import StudentAttendance from "./components/student/studentDashboard/studentComponents/StudentAttendance";
+import Profile from "./components/student/studentDashboard/studentComponents/Profile";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/course-details" element={<CourseDetails />} />
           <Route path="/semester-results" element={<SemesterResults />} />
           <Route path="/attendance" element={<StudentAttendance />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </BrowserRouter>
     </div>

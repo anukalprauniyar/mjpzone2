@@ -1,0 +1,41 @@
+.prof {
+    display: flex;
+    flex-direction:column;
+    border: 1px solid #ccc;
+    padding: 20px; 
+    margin-bottom: 20px; 
+    width: 1000px;
+    line-height: 50px; 
+    font-size: 20px;
+  }
+
+.personal {
+    display:inline-table;
+    padding-left: 10px;
+    
+    
+}  
+
+hr {
+    border-style:groove;
+}
+
+em {
+    padding: 30px;
+}
+
+b{
+    table-layout: fixed;
+}
+
+table {
+    width:100%;
+    border: 1px;
+    border-style: groove;
+
+}
+
+tr {
+    
+    background:rgb(123, 187, 224);
+}

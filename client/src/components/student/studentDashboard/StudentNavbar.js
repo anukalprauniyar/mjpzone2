@@ -13,7 +13,7 @@ function StudentHome() {
             <a href="/home" className="home nav-link">
                 <FontAwesomeIcon className="fontawesome" icon={faHouseChimney} /> Home
             </a>
-            <a href="/home" className="profile nav-link">
+            <a href="/profile" className="profile nav-link">
                 <FontAwesomeIcon className="fontawesome" icon={faAddressCard} /> Profile
             </a>
             <a href="attendance" className="attendance nav-link">
