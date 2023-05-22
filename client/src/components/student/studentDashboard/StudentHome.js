@@ -8,8 +8,9 @@ import "../css/StudentHome.css";
 function StudentHome() {
     return (
         <div className="dashboard">
-            <StudentNavbar />
+             <StudentNavbar />
              <StudentMain />
+             
         </div>
     );
 };

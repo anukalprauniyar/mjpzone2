@@ -7,13 +7,13 @@ import { faHouseChimney, faAddressCard, faClipboardCheck, faCalendarDays, faList
 function StudentHome() {
     return (
         <nav className="navbar">
-            <a href="/" className='title'>
+            <a href="/home" className='title'>
                 <h1><img src={Logo} alt="logo" /> MJPZONE</h1>
             </a>
-            <a href="/" className="home nav-link">
+            <a href="/home" className="home nav-link">
                 <FontAwesomeIcon className="fontawesome" icon={faHouseChimney} /> Home
             </a>
-            <a href="/" className="profile nav-link">
+            <a href="/home" className="profile nav-link">
                 <FontAwesomeIcon className="fontawesome" icon={faAddressCard} /> Profile
             </a>
             <a href="attendance" className="attendance nav-link">
