@@ -8,11 +8,12 @@ function StudentHome() {
     return (
         <nav className="navbar">
             <a href="/home" className='title'>
-                <h1><img src={Logo} alt="logo" /> MJPZONE</h1>
+                <h1><img src={Logo} alt="logo" />MJPZONE</h1>
             </a>
-            <a href="/home" className="home nav-link">
+            <a href="/dashboard" className="home nav-link">
                 <FontAwesomeIcon className="fontawesome" icon={faHouseChimney} /> Home
             </a>
+       
             <a href="/profile" className="profile nav-link">
                 <FontAwesomeIcon className="fontawesome" icon={faAddressCard} /> Profile
             </a>

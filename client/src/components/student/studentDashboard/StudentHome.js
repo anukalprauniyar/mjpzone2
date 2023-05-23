@@ -9,8 +9,7 @@ function StudentHome() {
     return (
         <div className="dashboard">
              <StudentNavbar />
-             <StudentMain />
-             
+             <StudentMain />            
         </div>
     );
 };
