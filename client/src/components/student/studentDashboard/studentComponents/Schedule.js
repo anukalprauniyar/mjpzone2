@@ -15,7 +15,7 @@ const Schedule = () => {
         { name: 'Web Techs', Time :' 01.15pm - 2.00pm', description: 'Vinay Maurya'},
         { name: 'Computer Networks', Time :' 01.15pm - 2.00pm', description: 'Vinay Maurya' }
       ]},
-    { id: 3, name: 'Wednusday', faculty: [
+    { id: 3, name: 'Wednesday', faculty: [
         { name: 'Java', Time :' 01.15pm - 2.00pm', description: 'Vinay Maurya' },
         { name: 'Web Tech', Time :' 01.15pm - 2.00pm', description: 'Vinay Maurya'},
         { name: 'Computer Network', Time :' 01.15pm - 2.00pm', description: 'Vinay Maurya' }

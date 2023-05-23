@@ -23,7 +23,6 @@ function App() {
         
         <Routes>
           <Route path="/" element={<StudentsLogin />} />
-          <></>
           <Route path="/faculty" element={<FacultyLogin />} />
           <Route path="/student-registration" element={<StudentRegistration />}/>
 
@@ -39,6 +38,8 @@ function App() {
           <Route path="/profile" element={<Profile />} /> */}
         </Routes>
       </BrowserRouter>
+
+      
     </div>
   );
 }
