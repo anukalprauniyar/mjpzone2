@@ -30,10 +30,10 @@ function StudentMain() {
             </nav>
 
 
-
+            {/* <StudentDashboard /> */}
             <BrowserRouter>
                 <Routes>
-                    <Route path='/dashboard' element={<StudentDashboard />} />
+                    <Route path='/home' element={<StudentDashboard />} />
                     <Route path='/schedule' element={<Schedule />} />
                     <Route path='/faculty-page' element={<FacultyPage />} />
                     <Route path='/event-notice' element={<EventNotice />} />

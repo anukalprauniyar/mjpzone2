@@ -9,9 +9,12 @@ function StudentsLogin() {
             <div className="login-frame">
                 <div className='login-container'>
                     <div className='login-left'>
-                        <Link to="/" className='title'>
+                        <Link to="/" className='titles'>
                             <h1><img src={Logo} alt="logo" /> MJPZONE</h1>
                         </Link>
+                        <div className='login-left-image'>
+                            <img src={Logo} alt="MJPRU Logo" />
+                        </div>
                     </div>
                     <div className='login-right'>
                         <h1>Login <span>(Admin/Faculty)</span></h1>

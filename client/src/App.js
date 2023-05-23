@@ -18,13 +18,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <StudentHome />
       <BrowserRouter>
-        
+
         <Routes>
           <Route path="/" element={<StudentsLogin />} />
           <Route path="/faculty" element={<FacultyLogin />} />
-          <Route path="/student-registration" element={<StudentRegistration />}/>
+          <Route path="/student-registration" element={<StudentRegistration />} />
 
           {/* <Route path="/" element={<StudentDashboard />} />
           <Route path="/home" element={<StudentHome />} />
@@ -35,11 +34,12 @@ function App() {
           <Route path="/course-details" element={<CourseDetails />} />
           <Route path="/semester-results" element={<SemesterResults />} />
           <Route path="/attendance" element={<StudentAttendance />} />
-          <Route path="/profile" element={<Profile />} /> */}
+        <Route path="/profile" element={<Profile />} /> */}
         </Routes>
       </BrowserRouter>
 
-      
+      <StudentHome />
+
     </div>
   );
 }

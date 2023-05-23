@@ -5,24 +5,24 @@ const FacultyPage = () => {
   const [selectedSubject, setSelectedSubject] = useState(null);
 
   const subjects = [
-    { id: 1, name: 'Mathematics', faculty: [
-      { name: 'John Doe', image: 'john-doe.jpg', description: 'Professor of Mathematics' },
-      { name: 'Jane Smith', image: 'jane-smith.jpg', description: 'Assistant Professor of Mathematics' },
-      { name: 'Emily Wong', image: 'emily-wong.jpg', description: 'Assistant Professor of Physics' }
+    { id: 1, name: 'C Programming', faculty: [
+      { name: 'Dr. Brajesh Kumar', image: 'john-doe.jpg', description: 'Professor of C Programming' },
+      { name: 'Sushil Gangwar', image: 'jane-smith.jpg', description: 'Assistant Professor of C Programming' },
+      { name: 'Deepika', image: 'emily-wong.jpg', description: 'Assistant Professor of C Programming' }
     ]},
-    { id: 2, name: 'Computer Science', faculty: [
-      { name: 'Michael Brown', image: 'michael-brown.jpg', description: 'Professor of Computer Science' },
-      { name: 'Sara Johnson', image: 'sara-johnson.jpg', description: 'Assistant Professor of Computer Science' },
-      { name: 'Emily Wong', image: 'emily-wong.jpg', description: 'Assistant Professor of Physics' }
+    { id: 2, name: 'Data Structure & Algorithms', faculty: [
+      { name: 'Dr. Brajesh Kumar', image: 'michael-brown.jpg', description: 'Professor of Data Structure & Algorithms' },
+      { name: 'Dr. Anil Kumar Bisht', image: 'sara-johnson.jpg', description: 'Assistant Professor of Data Structure & Algorithms' },
+      { name: 'Sushil Gangwar', image: 'emily-wong.jpg', description: 'Assistant Professor of Data Structure & Algorithms' }
     ]},
-    { id: 3, name: 'Physics', faculty: [
+    { id: 3, name: 'Computer Netowrks', faculty: [
       { name: 'David Lee', image: 'david-lee.jpg', description: 'Professor of Physics' },
       { name: 'Emily Wong', image: 'emily-wong.jpg', description: 'Assistant Professor of Physics' },
     ]},
-    { id: 3, name: 'Computer Networks', faculty: [
-      { name: 'David Lee', image: 'emily-wong.jpg' , description: 'Professor of Physics' },
-      { name: 'Emily Wong', image: 'mjpu-logo.png', description: 'Assistant Professor of Physics' },
-      { name: 'Emily Wong', image: 'emily-wong.jpg', description: 'Assistant Professor of Physics' }
+    { id: 3, name: 'Database Management Systems', faculty: [
+      { name: 'Mr. Pankaj Roy', image: 'emily-wong.jpg' , description: 'Professor of Database Management Systems' },
+      { name: 'Pushpendra Singh', image: 'mjpu-logo.png', description: 'Assistant Professor of Database Management Systems' },
+      { name: 'Emily Wong', image: 'emily-wong.jpg', description: 'Assistant Professor of Database Management Systems' }
     ]},
     { id: 3, name: 'Python', faculty: [
       { name: 'David Lee', image: 'david-lee.jpg', description: 'Professor of Physics' },
@@ -58,11 +58,11 @@ const FacultyPage = () => {
         <ul className="faculty-list">
           {selectedSubject.faculty.map((faculty) => (
             <li key={faculty.name} className="faculty-item">
-              <img
+              {/* <img
                 className="faculty-image"
                 src={`/images/${faculty.image}`}
                 alt={`${faculty.name} profile`}
-              />
+              /> */}
               <div className="faculty-info">
                 <h3 className="faculty-name">{faculty.name}</h3>
                 <p className="faculty-description">{faculty.description}</p>

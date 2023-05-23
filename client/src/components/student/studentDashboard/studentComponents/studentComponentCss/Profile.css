@@ -1,3 +1,7 @@
+.profile-containers {
+    margin: 20px;
+}
+
 .prof {
     display: flex;
     flex-direction:column;

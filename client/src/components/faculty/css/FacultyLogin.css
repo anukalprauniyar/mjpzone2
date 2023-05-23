@@ -30,7 +30,19 @@
     border-bottom-left-radius: 20px;
 }
 
-.title {
+.login-left-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8vh;
+}
+
+.login-left-image img{
+    height: 320px;
+    width: 275px;
+}
+
+.titles {
     display: inline-block;
     padding: 5px;
     background: rgba(227, 246, 245, 0.8);
@@ -40,12 +52,12 @@
     text-decoration: none;
 }
 
-.title img{
+.titles img{
     height: 6.3vh;
     width: 3.2vw;
 }
 
-.title h1{
+.titles h1{
     font-size: 3em;
 }
 

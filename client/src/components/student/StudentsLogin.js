@@ -45,6 +45,9 @@ function StudentsLogin() {
                         <Link to="/" className='title'>
                             <h1><img src={Logo} alt="logo" /> MJPZONE</h1>
                         </Link>
+                        <div className='login-left-image'>
+                            <img src={Logo} alt="MJPRU Logo"/>
+                        </div>
                     </div>
                     <div className='login-right'>
                         <h1>Login <span>(Student/Parent)</span></h1>

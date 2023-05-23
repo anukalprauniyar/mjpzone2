@@ -29,6 +29,18 @@
     border-bottom-left-radius: 20px;
 }
 
+.login-left-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8vh;
+}
+
+.login-left-image img{
+    height: 320px;
+    width: 275px;
+}
+
 .title {
     display: inline-block;
     padding: 5px;

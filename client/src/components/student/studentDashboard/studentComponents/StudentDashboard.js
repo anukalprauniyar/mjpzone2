@@ -1,7 +1,9 @@
 import React from "react";
 import "./studentComponentCss/StudentDashboard.css";
+import { Link } from 'react-router-dom';
 
 function StudentDashboard() {
+    var c = 1;
     return (
         <div className="main-dashboard">
             <div className="welcome-dashboard">
@@ -46,34 +48,30 @@ function StudentDashboard() {
                     </div>
                 </div>
                 <div className="events">
-                <h2>Upcoming Events</h2>
-                    <div className="attendance-container">
-                        <div className="attendance-subject">
-                            <p className="subject-code"><b>MCA 101</b></p>
-                            <p className="subject-name">Programming in C</p>
-                            <p className="subject-percentange"><b>23/30</b></p>
+                    <h2>Upcoming Events</h2>
+                    <div className="event-notice11" >
+
+                        <div className="events-links">
+                            <Link className="events-links">{c++}- Join us for our next event on May 15th at 6pm. The event will be held at the XYZ Convention Center. See you there!</Link>
                         </div>
-                        <div className="attendance-subject">
-                            <p className="subject-code"><b>MCA 103</b></p>
-                            <p className="subject-name">Database Management System</p>
-                            <p className="subject-percentange"><b>23/30</b></p>
+                        <div className="events-links">
+                            <Link className="events-links">{c++}- Join us for our next event on May 15th at 6pm. The event will be held at the XYZ Convention Center. See you there!</Link>
                         </div>
-                        <div className="attendance-subject">
-                            <p className="subject-code"><b>MCA 105</b></p>
-                            <p className="subject-name">Computer Organisation</p>
-                            <p className="subject-percentange"><b>23/30</b></p>
+                        <div className="events-links">
+                            <Link className="events-links">{c++}- Join us for our next event on May 15th at 6pm. The event will be held at the XYZ Convention Center. See you there!</Link>
                         </div>
-                        <div className="attendance-subject">
-                            <p className="subject-code"><b>MCA 107</b></p>
-                            <p className="subject-name">Data Structures and Algorithms</p>
-                            <p className="subject-percentange"><b>23/30</b></p>
+                        <div className="events-links">
+                            <Link className="events-links">{c++}- Join us for our next event on May 15th at 6pm. The event will be held at the XYZ Convention Center. See you there!</Link>
                         </div>
-                        <div className="attendance-subject">
-                            <p className="subject-code"><b>MCA 109</b></p>
-                            <p className="subject-name">Principles of Management</p>
-                            <p className="subject-percentange"><b>23/30</b></p>
+                        <div className="events-links">
+                            <Link className="events-links">{c++}- Join us for our next event on May 15th at 6pm. The event will be held at the XYZ Convention Center. See you there!</Link>
                         </div>
+                        <div className="events-links">
+                            <Link className="events-links">{c++}- Join us for our next event on May 15th at 6pm. The event will be held at the XYZ Convention Center. See you there!</Link>
+                        </div>
+
                     </div>
+
                 </div>
             </div>
 

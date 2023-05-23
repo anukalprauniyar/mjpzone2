@@ -7,7 +7,7 @@
     background: #e4e3e3;
 }
 
-.title {
+.title2 {
     display: inline-block;
     padding: 10.7px;
     /* background: #FF7926; */
@@ -16,13 +16,13 @@
 }
 
 
-.title img{
+.title2 img{
     height: 5.1vh;
     width: 2.3vw;
     
 }
 
-.title h1{
+.title2 h1{
     font-size: 2.4em;
 }
 

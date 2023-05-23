@@ -36,7 +36,7 @@ function StudentProfile(props) {
   } = props.student;
 
   return (
-    <div className="profile-container">
+    <div className="profile-containers">
       <div className="personal">
         {/* personal info */}
         <h3>Personal Information</h3>
@@ -178,39 +178,39 @@ const student = {
   // name: "John Doe",
   // age: 21,
   // major: "Computer Science",
-  First_Name: "Tony",
-  Last_Name: "Stark",
-  Father_First_Name: "Howard",
-  Father_Last_Name: "Stark",
-  Mother_First_Name: "Maria",
-  Mother_Last_Name: "Stark",
-  Date_Of_Birth: "29th May",
+  First_Name: "Abhishek",
+  Last_Name: "Srivastav",
+  Father_First_Name: "Sushil",
+  Father_Last_Name: "Srivastav",
+  Mother_First_Name: "Saroj",
+  Mother_Last_Name: "Srivastav",
+  Date_Of_Birth: "10th March",
   Gender: "Male",
-  Phone_No: 6781367092,
-  Father_Phone_No: 6781367092,
-  Email: "tonystark3000@gmail.com",
-  Address: "Stark Tower New York",
-  City: "New York",
-  State: "United States",
-  Country: "American",
+  Phone_No: 9616882034,
+  Father_Phone_No: 9415451963,
+  Email: "abhisheksriavstav@gmail.com",
+  Address: "Azad Nagar",
+  City: "Ghazipur",
+  State: "Uttar Pradesh",
+  Country: "India",
   // {/* For tenth class */}
-  tenth_Roll_No: 3000,
-  ten_Serial_No: 3999,
-  ten_Board: "Avengers",
-  ten_Obtained_Marks: 3000,
-  ten_Maximum_Marks: 3000,
+  tenth_Roll_No: 12345,
+  ten_Serial_No: 12345,
+  ten_Board: "UP Board",
+  ten_Obtained_Marks: 450,
+  ten_Maximum_Marks: 600,
   // For 12
-  twelth_Roll_No: 6000,
-  twel_Serial_No: 3888,
-  twel_Board: "Avengers",
-  twel_Obtained_Marks: 6000,
-  twel_Maximum_Marks: 6000,
+  twelth_Roll_No: 12345,
+  twel_Serial_No: 12345,
+  twel_Board: "UP Board",
+  twel_Obtained_Marks: 437,
+  twel_Maximum_Marks: 500,
   // {/* For graduation */}
-  Graduation_Roll_No: 9000,
-  grad_Enrollment_No: 78982942794,
-  grad_University_Name: "Avengers",
-  grad_Obtained_Marks: 9000,
-  grad_Maximum_Marks: 9000,
+  Graduation_Roll_No: 12345,
+  grad_Enrollment_No: 12345,
+  grad_University_Name: "MGKVP",
+  grad_Obtained_Marks: 2279,
+  grad_Maximum_Marks: 3600,
 };
 
 function Profile() {

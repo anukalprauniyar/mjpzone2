@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function EventNotice() {
     var c=1;
     return (
-      <div className="event-notices">
+      <div className="event-notice">
           <h1 id="event_title">Upcoming Events</h1>
           <div className="event-notice" >
             
